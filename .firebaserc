@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-chat-acdb3": {
+      "hosting": {
+        "angular-chat": [
+          "angular-chat-acdb3"
+        ]
+      }
+    }
+  }
+}
