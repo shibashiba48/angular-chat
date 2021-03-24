@@ -37,7 +37,7 @@ export class AppComponent {
 
   addComment(comment: string): void {
     if (comment) {
-      this.commentsRef.push(new Comment(this.currentUser, comment));
+      this.commentsRef.push(new Comment({ user: this.currentUser, message: comment }));
       this.comment = '';
     }
   }
