@@ -8,12 +8,14 @@ import { environment } from '../../environments/environment';
 import { HeaderComponent } from './components/header/header.component';
 import { HAMMER_LOADER } from '@angular/platform-browser';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
   declarations: [HeaderComponent, NotFoundComponent],
   imports: [
     CommonModule,
+    RouterModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFireDatabaseModule
